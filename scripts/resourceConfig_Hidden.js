@@ -2,37 +2,39 @@
 function hiddenResource(){
     let c = resourceIdentification();
     
-    if (c.length>0){
-        if (c[2]=="hvp"){
-            document.getElementById("id_showdescription").style.display = "none";
-            document.getElementById("id_displayoptions").style.display = "none";
-            document.getElementById("id_modstandardgrade").style.display = "none";
-            document.getElementById("id_modstandardelshdr").style.display = "none";
-            document.getElementById("id_availabilityconditionsheader").style.display = "none";
-            document.getElementById("id_activitycompletionheader").style.display = "none";
-            document.getElementById("id_competenciessection").style.display = "none";
-        }
-        else if (c[2]=="page"){
-            document.getElementById("id_showdescription").style.display = "none";
-            document.getElementById("id_appearancehdr").style.display = "none";
-            document.getElementById("id_modstandardelshdr").style.display = "none";
-            document.getElementById("id_availabilityconditionsheader").style.display = "none";
-            document.getElementById("id_activitycompletionheader").style.display = "none";
-            document.getElementById("id_competenciessection").style.display = "none";
-            document.getElementById("fitem_id_introeditor").style.display = "none";
-        }
-        else if (c[2]=="folder"){
-            document.getElementById("id_showdescription").style.display = "none";
-            document.getElementById("id_display").style.display = "none";
-            document.getElementById("id_showexpanded").style.display = "none";
-            document.getElementById("id_showdownloadfolder").style.display = "none";
-            document.getElementById("id_forcedownload").style.display = "none";
-            document.getElementById("id_modstandardelshdr").style.display = "none";
-            document.getElementById("id_availabilityconditionsheader").style.display = "none";
-            document.getElementById("id_activitycompletionheader").style.display = "none";
-            document.getElementById("id_competenciessection").style.display = "none";
-        }
-    }   
+    if(c){
+        if (c.length>0){
+            if (c[2]=="hvp"){
+                document.getElementById("id_showdescription").style.display = "none";
+                document.getElementById("id_displayoptions").style.display = "none";
+                document.getElementById("id_modstandardgrade").style.display = "none";
+                document.getElementById("id_modstandardelshdr").style.display = "none";
+                document.getElementById("id_availabilityconditionsheader").style.display = "none";
+                document.getElementById("id_activitycompletionheader").style.display = "none";
+                document.getElementById("id_competenciessection").style.display = "none";
+            }
+            else if (c[2]=="page"){
+                document.getElementById("id_showdescription").style.display = "none";
+                document.getElementById("id_appearancehdr").style.display = "none";
+                document.getElementById("id_modstandardelshdr").style.display = "none";
+                document.getElementById("id_availabilityconditionsheader").style.display = "none";
+                document.getElementById("id_activitycompletionheader").style.display = "none";
+                document.getElementById("id_competenciessection").style.display = "none";
+                document.getElementById("fitem_id_introeditor").style.display = "none";
+            }
+            else if (c[2]=="folder"){
+                document.getElementById("id_showdescription").style.display = "none";
+                document.getElementById("id_display").style.display = "none";
+                document.getElementById("id_showexpanded").style.display = "none";
+                document.getElementById("id_showdownloadfolder").style.display = "none";
+                document.getElementById("id_forcedownload").style.display = "none";
+                document.getElementById("id_modstandardelshdr").style.display = "none";
+                document.getElementById("id_availabilityconditionsheader").style.display = "none";
+                document.getElementById("id_activitycompletionheader").style.display = "none";
+                document.getElementById("id_competenciessection").style.display = "none";
+            }
+        } 
+    } 
 }
 
 //identificar tipo de elemento
