@@ -1,5 +1,5 @@
 //Ocultar elementos de configuración
-window.addEventListener("load", function(event) {
+function hiddenResource(){
     let c = resourceIdentification();
     
     if (c.length>0){
@@ -33,7 +33,7 @@ window.addEventListener("load", function(event) {
             document.getElementById("id_competenciessection").style.display = "none";
         }
     }   
-});
+}
 
 //identificar tipo de elemento
 function resourceIdentification(){
@@ -69,39 +69,7 @@ function resourceIdentification(){
     }
 }
 
-// Configuración del recurso
-function setResource(){
-    let c = resourceIdentification();
-    let currentURL = window.location.href;
 
-    //Se identifica el tipo de recurso para configurar solo si se está dentro del recurso
-    if (currentURL.indexOf("modedit.php")>0){
-        switch (c[2]){
-            case "hvp":
-                console.log("1");
-                setH5P_1();
-                setH5P_1();
-                document.getElementById("modalConfig").click();
-                document.getElementById("id_submitbutton").click();
-                break;
-            case "folder":
-                console.log("2");
-                setCar();
-                setCar();
-                document.getElementById("id_submitbutton").click();
-                break;
-            case "page":
-                console.log("3");
-                setPag();
-                setPag();
-                document.getElementById("id_submitbutton").click();
-                break;
-            default:
-                break;
-        }
-    }
-        
-}
 
 function setH5P_1(){
     let buttonUnLockCompletion = document.getElementById('id_unlockcompletion');
