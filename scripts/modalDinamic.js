@@ -9,8 +9,8 @@ function showModal(title, content, close_x, button){
     let modalFirstClose = `<button class="modal__close" aria-label="Close modal" data-custom-close="modal-1" ></button>`;
     let modalContent = `</header>
           <div class="modal-content-content">
-              <div class="modal__content centerDiv">
-                <h2>${content}</h2>
+              <div class="modal__content">
+                <h3 align = "center">${content}</h3>
               </div>
           </div>`;
     let modalFooter = `<footer class="modal__footer">
