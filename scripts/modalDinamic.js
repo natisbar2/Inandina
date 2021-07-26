@@ -1,7 +1,15 @@
 function showModal(title, content, close_x, button){
+    
+    if(close_x==false){
+        defClass = "modal__header";
+    }
+    else{
+        defClass = "centerDiv";
+    }
+
     let modalHeader = `<div class="modal micromodal-slide" id="modal-1" aria-hidden="true"><div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-          <header class="centerDiv" >
+          <header class="${defClass}" >
                   <h2 class="centerDiv">
                     ${title}
                   </h2>`;
