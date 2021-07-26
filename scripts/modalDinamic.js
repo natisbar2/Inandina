@@ -32,7 +32,7 @@ function showModal(title, content, close_x, button){
     }
     text += modalCierre;
     if(!document.getElementById("modal-1")){
-      document.body.innerHTML += document.body.innerHTML;
+      document.body.innerHTML += text;
     }
   }              
   
