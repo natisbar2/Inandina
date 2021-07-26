@@ -1,6 +1,6 @@
 function showModal(title, content, close_x, button){
     
-    if(close_x==false){
+    if(close_x==true){
         defClass = "modal__header";
     }
     else{
