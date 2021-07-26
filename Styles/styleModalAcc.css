@@ -48,7 +48,7 @@
   
   .modal__header {
     position: relative;
-    display: flex;
+    display: block;
     height: 30px;
     margin-bottom: 20px;
   }
