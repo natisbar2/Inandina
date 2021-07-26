@@ -10,7 +10,7 @@ function showModal(title, content, close_x, button){
     let modalContent = `</header>
           <div class="modal-content-content">
               <div class="modal__content centerDiv">
-                <p>${content}</p>
+                <h2>${content}</h2>
               </div>
           </div>`;
     let modalFooter = `<footer class="modal__footer">
